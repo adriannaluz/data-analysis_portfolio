@@ -16,8 +16,8 @@ In the data exploration notebook ([here](https://github.com/adriannaluz/data-ana
 > I decided to do a separated analysis on the returned transactions and the ones with price equal than zero. Therefore, the conclusions below will refer to a new dataset created by extracting the negative quantity data and the price equal to zero data.
 
 - A total of 4334 customers were purchasing more than 18K invoices with around 3600 different products
-- The best seller item in the whole dataset is also the most return one.
 - United Kingdom is the country with the highest number of purchases and Saudi Arabia with the lowest
+- - The best seller item in the whole dataset is also the most return one
 
 ### Sales related findings
 
@@ -57,5 +57,8 @@ In the data exploration notebook ([here](https://github.com/adriannaluz/data-ana
 - 1916 products have been returned at least once
 
 ## Exploratory Data Analysis
-In the EDA notebook ([here]()), I performed a more intensive analysis finding that:
-- The price variable is positively skewed. The outliers represent 8.4% of the data (based on the IQR method)
+For the exploratory data analysis, I used the complete dataset with the following modifications:
+- 34 transactions (~0.01 % of the total data) with price equal to zero were ruled out
+
+In contrast to the data exploration face, a more thorough analysis was performed in the exploratory data analysis. In this face I found that:  
+- The price variable is positively skewed. The outliers represent 8.75 % of the data (based on the IQR method)
