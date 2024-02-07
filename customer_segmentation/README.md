@@ -8,15 +8,16 @@ data.
 In the data exploration notebook ([here](https://github.com/adriannaluz/data-analysis_portfolio/blob/customer_segmentation/customer_segmentation/notebooks/data_exploration.ipynb)), I had a rough look on the data to check for inconsistencies overseen during the data engineering. As a general overview, I found that:
 - There almost 400K transactions with no null values
 - The transactions were purchased in 37 different countries from December 2010 to December 2011
-- A total of 4334 customers were purchasing more than 18K invoices with around 3600 different products 
 - There are 34 transactions with price equal to zero
 - There are 8507 transactions with quantity smaller than zero. These transactions were considered returns 
 - There are 18 stock codes with 'Unknown' descriptions. The reason why is still unclear
-- The best seller item in the whole dataset is also the most return one.
-- United Kingdom is the country with the highest number of purchases and Saudi Arabia with the lowest
 
 > [!NOTE]
 > I decided to do a separated analysis on the returned transactions and the ones with price equal than zero. Therefore, the conclusions below will refer to a new dataset created by extracting the negative quantity data and the price equal to zero data.
+
+- A total of 4334 customers were purchasing more than 18K invoices with around 3600 different products
+- The best seller item in the whole dataset is also the most return one.
+- United Kingdom is the country with the highest number of purchases and Saudi Arabia with the lowest
 
 ### Sales related findings
 
