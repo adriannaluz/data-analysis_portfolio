@@ -61,4 +61,12 @@ For the exploratory data analysis, I used the complete dataset with the followin
 - 34 transactions (~0.01 % of the total data) with price equal to zero were ruled out
 
 In contrast to the data exploration face, a more thorough analysis was performed in the exploratory data analysis. In this face I found that:  
-- The price variable is positively skewed. The outliers represent 8.75 % of the data (based on the IQR method)
+- The price variable is positively skewed. The outliers represent 8.75 % of the data (based on the IQR method).
+#- As a consequence, the total_order_value (price * quantity) will have also outliers which can alter the customer segmentation using k-means. 
+- Purchases remained steady from January to August, then increased until November, reaching the highest peak. However, they sharply declined in December, with December 2011 having the fewest purchases ![see figure below](visualizations/invoice_month.png "")
+- Customers are more likely to spend money on Thursdays. It is interesting that there is no data available for Saturdays ![see figure below](visualizations/invoice_weekday.png "")
+- The customer loyalty was defined as the difference on time between the first invoice and the last invoice per client. Taking into account this new variable, I found that: 
+  - The average loyalty time of a customer is 128 days
+  - The mininmum and maximum loyalty time is 0 and 373 days respectively
+  - 37% of the customers are customers only once (loyalty time equal to 0)
+  - The distribution of the loyalty days (for customer with more than 1 loyalty day) is quite flat till around 350 days where there is an increasement of almost 200 customers ![see figure below](visualizations/loyalty_distribution.png "Distributions of loyalty days for customer with more than 1 day of loyalty")
