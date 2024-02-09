@@ -7,7 +7,7 @@ data.
 ## Data Exploration
 In the data exploration notebook ([here](https://github.com/adriannaluz/data-analysis_portfolio/blob/customer_segmentation/customer_segmentation/notebooks/data_exploration.ipynb)), I had a rough look on the data to check for inconsistencies overseen during the data engineering. As a general overview, I found that:
 - There almost 400K transactions with no null values
-- The transactions were purchased in 37 different countries from December 2010 to December 2011
+- The transactions were purchased in 37 different countries from December 2010 to December 2011. One of these 37 country entries is "Unspecified"
 - There are 34 transactions with price equal to zero
 - There are 8507 transactions with quantity smaller than zero. These transactions were considered returns 
 - There are 18 stock codes with 'Unknown' descriptions. The reason why is still unclear
